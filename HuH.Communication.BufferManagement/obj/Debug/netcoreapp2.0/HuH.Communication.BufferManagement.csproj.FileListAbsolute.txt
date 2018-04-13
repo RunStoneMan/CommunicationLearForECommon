@@ -1,0 +1,8 @@
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.deps.json
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.dll
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.pdb
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.dll
+C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.pdb
