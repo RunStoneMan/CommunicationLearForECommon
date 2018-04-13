@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.BufferManagement\\HuH.Communication.BufferManagement.csproj",
-      "projectName": "HuH.Communication.BufferManagement",
-      "projectPath": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.BufferManagement\\HuH.Communication.BufferManagement.csproj",
+      "projectUniqueName": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.Common\\HuH.Communication.Common.csproj",
+      "projectName": "HuH.Communication.Common",
+      "projectPath": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.Common\\HuH.Communication.Common.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.BufferManagement\\obj\\",
+      "outputPath": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
