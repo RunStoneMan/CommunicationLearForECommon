@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Components\" />
+    <ProjectReference Include="..\HuH.Communication.Common\HuH.Communication.Common.csproj" />
   </ItemGroup>
 
 </Project>
