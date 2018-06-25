@@ -201,7 +201,7 @@
   },
   "libraries": {
     "Microsoft.NETCore.App/2.0.0": {
-      "sha512": "fR1XycY4MgCTRltj/vJgaIUxVRZAXgFVDcwnSHvAiPyttN9Hh0hV7Y/F23fnFnIu9zceG+U+yJ+7Zh3mCsuTBA==",
+      "sha512": "/mzXF+UtZef+VpzzN88EpvFq5U6z4rj54ZMq/J968H6pcvyLOmcupmTRpJ3CJm8ILoCGh9WI7qpDdiKtuzswrQ==",
       "type": "package",
       "path": "microsoft.netcore.app/2.0.0",
       "files": [
@@ -479,7 +479,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.0.0": {
-      "sha512": "yBLrEcVceGt9eqhD1bvadpQsvjNOM7YdJ46y9aOUbv5WtNEleK++IkdU+gXfKmuAY6fF8y/J3MnJEgKQeSb5XQ==",
+      "sha512": "L4GGkcI/Mxl8PKLRpFdGmLb5oI8sGIR05bDTGkzCoamAjdUl1Zhkov2swjEsZvKYT8kkdiz39LtwyGYuCJxm1A==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.0.0",
       "files": [
@@ -491,7 +491,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostPolicy/2.0.0": {
-      "sha512": "0ynIE9/bYgc2VogmQPFdaBRb8KSwLEgCBUNzkJtFZJVMmhJ0IKbOWU9o167zegimBbL6rg1KY2U42oX7bwctbg==",
+      "sha512": "rm7mMn0A93fwyAwVhbyOCcPuu2hZNL0A0dAur9sNG9pEkONPfCEQeF7m2mC8KpqZO0Ol6tpV5J0AF3HTXT3GXA==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostpolicy/2.0.0",
       "files": [
@@ -503,7 +503,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetHostResolver/2.0.0": {
-      "sha512": "OuI0liyAoJxXOtBooKDaPEptSx1fOEqLByDv+KGFIaIws4WQwC9jeCGm8/ocGEofHmXzGotEWS2xcDb2En25qw==",
+      "sha512": "uBbjpeSrwsaTCADZCzRk+3aBzNnMqkC4zftJWBsL+Zk+8u+W+/lMb2thM5Y4hiVrv1YQg9t6dKldXzOKkY+pQw==",
       "type": "package",
       "path": "microsoft.netcore.dotnethostresolver/2.0.0",
       "files": [
@@ -530,7 +530,7 @@
       ]
     },
     "NETStandard.Library/2.0.0": {
-      "sha512": "dXwVydexKvNiLnNCA13rOM3HU+U2WrUNJHYXxxit5efPdEwUXxdRLrF2HU0y+0mdQd3NdEw+IKl2+uwrhpwENg==",
+      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
       "path": "netstandard.library/2.0.0",
       "files": [
@@ -664,34 +664,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\tik\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.BufferManagement\\HuH.Communication.BufferManagement.csproj",
+      "projectUniqueName": "F:\\Users\\tik\\GitHub\\Communication\\HuH.Communication.BufferManagement\\HuH.Communication.BufferManagement.csproj",
       "projectName": "HuH.Communication.BufferManagement",
-      "projectPath": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.BufferManagement\\HuH.Communication.BufferManagement.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\GitHub\\Communication\\HuH.Communication.BufferManagement\\obj\\",
+      "projectPath": "F:\\Users\\tik\\GitHub\\Communication\\HuH.Communication.BufferManagement\\HuH.Communication.BufferManagement.csproj",
+      "packagesPath": "C:\\Users\\tik\\.nuget\\packages\\",
+      "outputPath": "F:\\Users\\tik\\GitHub\\Communication\\HuH.Communication.BufferManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\tik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
