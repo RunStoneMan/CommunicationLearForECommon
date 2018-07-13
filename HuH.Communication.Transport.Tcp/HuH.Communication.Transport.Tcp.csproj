@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HuH.Communication.BufferManagement\HuH.Communication.BufferManagement.csproj" />
     <ProjectReference Include="..\HuH.Communication.Common\HuH.Communication.Common.csproj" />
   </ItemGroup>
 

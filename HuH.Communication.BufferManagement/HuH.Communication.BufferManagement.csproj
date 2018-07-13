@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HuH.Communication.Common\HuH.Communication.Common.csproj" />
+  </ItemGroup>
+
 </Project>

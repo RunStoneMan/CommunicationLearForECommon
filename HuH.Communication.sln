@@ -5,11 +5,15 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuH.Communication.BufferManagement", "HuH.Communication.BufferManagement\HuH.Communication.BufferManagement.csproj", "{8D784966-8ADF-4603-B1B2-66ECD75E0846}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuH.Communication.Common", "HuH.Communication.Common\HuH.Communication.Common.csproj", "{3D42D69F-A2FB-462B-A5D2-E2B3D1F94CE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuH.Communication.Common", "HuH.Communication.Common\HuH.Communication.Common.csproj", "{3D42D69F-A2FB-462B-A5D2-E2B3D1F94CE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuH.Communication.Transport.Tcp", "HuH.Communication.Transport.Tcp\HuH.Communication.Transport.Tcp.csproj", "{9EFADACC-5588-457A-9979-93D931B31E92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuH.Communication.Transport.Tcp", "HuH.Communication.Transport.Tcp\HuH.Communication.Transport.Tcp.csproj", "{9EFADACC-5588-457A-9979-93D931B31E92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuH.Communication.Transport.http", "HuH.Communication.Transport.http\HuH.Communication.Transport.http.csproj", "{0A1BA5E5-B537-4966-B7CC-D1BB0197D2B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuH.Communication.Transport.http", "HuH.Communication.Transport.http\HuH.Communication.Transport.http.csproj", "{0A1BA5E5-B537-4966-B7CC-D1BB0197D2B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D91DCF89-5CB9-48F1-AC66-E4DBEF3BB777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuH.Communication.Transport.TcpTest", "HuH.Communication.Transport.TcpTest\HuH.Communication.Transport.TcpTest.csproj", "{8D59A8F9-85ED-4B68-BDE6-A1A735D317AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{0A1BA5E5-B537-4966-B7CC-D1BB0197D2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A1BA5E5-B537-4966-B7CC-D1BB0197D2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A1BA5E5-B537-4966-B7CC-D1BB0197D2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D59A8F9-85ED-4B68-BDE6-A1A735D317AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D59A8F9-85ED-4B68-BDE6-A1A735D317AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D59A8F9-85ED-4B68-BDE6-A1A735D317AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D59A8F9-85ED-4B68-BDE6-A1A735D317AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D59A8F9-85ED-4B68-BDE6-A1A735D317AF} = {D91DCF89-5CB9-48F1-AC66-E4DBEF3BB777}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4474E58-C607-4DA2-A51C-FF138AD8AB3F}

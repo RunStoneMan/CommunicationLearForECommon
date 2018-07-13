@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HuH.Communication.Transport.Tcp
 {
-    interface ITcpConnection
+    public interface ITcpConnection
     {
 
         Guid ConnectionId { get; }

@@ -6,6 +6,9 @@ using System.Text;
 
 namespace HuH.Communication.Common
 {
+    /// <summary>
+    /// 工作台 默认依赖注入
+    /// </summary>
     public class Workbench
     {
         /// <summary>Provides the singleton access instance.
