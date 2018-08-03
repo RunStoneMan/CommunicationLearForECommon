@@ -1,4 +1,5 @@
 ﻿using HuH.Communication.Common.Utils;
+using HuH.Communication.Transport.Tcp.Remoting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,26 +8,26 @@ using System.Threading;
 
 namespace HuH.Communication.Transport.Tcp
 {
-
-    [Flags]
-    public enum TcpFlags : byte
+    public enum OperationResult
     {
-        None = 0x00,
-        Authenticated = 0x01,
-        TrustedWrite = 0x02
+        Success = 0,
+        PrepareTimeout = 1,
+        CommitTimeout = 2,
+        ForwardTimeout = 3,
+        WrongExpectedVersion = 4,
+        StreamDeleted = 5,
+        InvalidTransaction = 6,
+        AccessDenied = 7,
+        Error=9
     }
-
 
     public class TcpPackage
     {
-
-
-        public const int CommandOffset = 0;
-
-
-
         private static long _sequence;
         public string Id { get; set; }
+
+        public OperationResult GetOperationResult { set; get; }
+
         public readonly TcpCommand Command;
 
         public long Sequence { get; set; }
@@ -35,12 +36,25 @@ namespace HuH.Communication.Transport.Tcp
         public IDictionary<string, string> Header { get; set; }
 
         public TcpPackage() { }
-        public TcpPackage(TcpCommand command, byte[] body, IDictionary<string, string> header = null) : this(ObjectId.GenerateNewStringId(), command, Interlocked.Increment(ref _sequence), body, DateTime.Now, header) { }
-        public TcpPackage(string id, TcpCommand command, long sequence, byte[] body, DateTime createdTime, IDictionary<string, string> header)
+
+        public TcpPackage(TcpCommand command, byte[] body, IDictionary<string, string> header = null) :
+            this(ObjectId.GenerateNewStringId(), command, Interlocked.Increment(ref _sequence), body, DateTime.Now, OperationResult.Success, header)
+        { }
+
+        public TcpPackage(TcpCommand command, long sequence, OperationResult result, byte[] body, IDictionary<string, string> header = null) :
+         this(ObjectId.GenerateNewStringId(), command, sequence, body, DateTime.Now, result, header)
+        { }
+
+        public TcpPackage(TcpCommand command, long sequence,byte[] body, IDictionary<string, string> header = null) : 
+            this(ObjectId.GenerateNewStringId(), command, sequence, body, DateTime.Now, OperationResult.Success, header) { }
+        public TcpPackage(TcpCommand command,byte[] body, OperationResult operationResult, IDictionary<string, string> header = null ) : 
+            this(ObjectId.GenerateNewStringId(), command, Interlocked.Increment(ref _sequence), body, DateTime.Now, operationResult, header) { }
+        public TcpPackage(string id, TcpCommand command, long sequence, byte[] body, DateTime createdTime, OperationResult operationResult, IDictionary<string, string> header)
         {
             Id = id;
             Command = command;
             Sequence = sequence;
+            GetOperationResult = operationResult;
             Body = body;
             Header = header;
             CreatedTime = createdTime;
@@ -75,12 +89,13 @@ namespace HuH.Communication.Transport.Tcp
             var createdTime = ByteUtil.DecodeDateTime(data.ToArray(), srcOffset, out srcOffset);
             var headerLength = ByteUtil.DecodeInt(data.ToArray(), srcOffset, out srcOffset);
             var header = HeaderUtil.DecodeHeader(data.ToArray(), srcOffset, out srcOffset);
+            var resutl = (OperationResult)ByteUtil.DecodeInt(data.ToArray(), srcOffset, out srcOffset);
             var bodyLength = data.Count - srcOffset;
             var body = new byte[bodyLength];
 
             Buffer.BlockCopy(data.ToArray(), srcOffset, body, 0, bodyLength);
 
-            return new TcpPackage(id, command, sequence, body, createdTime, header);
+            return new TcpPackage(id, command,sequence, body, createdTime, resutl, header);
         }
 
         public ArraySegment<byte> AsArraySegment()
@@ -99,7 +114,7 @@ namespace HuH.Communication.Transport.Tcp
             var createdTimeBytes = ByteUtil.EncodeDateTime(CreatedTime);
             var headerBytes = HeaderUtil.EncodeHeader(Header);
             var headerLengthBytes = BitConverter.GetBytes(headerBytes.Length);
-
+            var result = BitConverter.GetBytes((int)GetOperationResult);
             return ByteUtil.Combine(
                 IdLengthBytes,
                 IdBytes,
@@ -108,6 +123,7 @@ namespace HuH.Communication.Transport.Tcp
                 createdTimeBytes,
                 headerLengthBytes,
                 headerBytes,
+                result,
                 Body);
         }
     }

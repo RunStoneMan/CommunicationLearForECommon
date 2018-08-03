@@ -60,6 +60,12 @@ namespace HuH.Communication.Transport.Tcp
             _flowControlThreshold = TcpConfiguration.SendMessageFlowControlThreshold;
         }
 
+        public TcpClientConnector RegisterConnectionEventListener(IConnectionEventListener listener)
+        {
+            _connectionEventListeners.Add(listener);
+            return this;
+
+        }
         public TcpClientConnector Start(int waitMilliseconds = 5000)
         {
             var socketArgs = new SocketAsyncEventArgs

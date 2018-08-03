@@ -8,7 +8,7 @@ namespace HuH.Communication.Transport.Tcp
     {
         public const int SendBufferSize = 1024 * 64;
         public const int ReceiveBufferSize = 1024 * 64;
-
+        
         public const int MaxSendPacketSize = 1024 * 64;
         public const int SendMessageFlowControlThreshold = 1000;
 
@@ -23,5 +23,12 @@ namespace HuH.Communication.Transport.Tcp
 
         public const int BufferChunksCount = 512;
         public const int SocketBufferSize = 8 * 1024;
+
+        public const int ReceiveDataBufferSize = 1024 * 64;
+        public const int ReceiveDataBufferPoolSize = 50;
+
+
+        public const int ReconnectToServerInterval = 5000;
+        public const int ScanTimeoutRequestInterval = 5000;
     }
 }

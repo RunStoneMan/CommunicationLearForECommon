@@ -6,3 +6,15 @@ C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferMa
 C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.pdb
 C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.dll
 C:\Users\Administrator\source\repos\HuH.Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.pdb
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.deps.json
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.dll
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.pdb
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.Common.dll
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\bin\Debug\netcoreapp2.0\HuH.Communication.Common.pdb
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.csprojAssemblyReference.cache
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.csproj.CoreCompileInputs.cache
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.AssemblyInfoInputs.cache
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.AssemblyInfo.cs
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.csproj.CopyComplete
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.dll
+F:\Users\tik\GitHub\Communication\HuH.Communication.BufferManagement\obj\Debug\netcoreapp2.0\HuH.Communication.BufferManagement.pdb
