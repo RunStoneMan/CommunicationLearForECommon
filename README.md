@@ -1,2 +1,2 @@
 # Communication #
-### .net core Socket Communication ###
+### .net core Socket RPC ###
